@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block content %}
+</br></br></br></br></br>
+
+
+<form method="POST">
+  <div class="form-group">
+    <label for="code_name">Short name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="code_name"
+      name="code_name"
+      placeholder="Enter name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="full_name">Dish name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="full_name"
+      name="full_name"
+      placeholder="Enter the full name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="cus_pic">Put the URL</label>
+    <input
+      type="text"
+      class="form-control"
+      id="cus_pic"
+      name="cus_pic"
+      placeholder="Enter URL"
+    />
+  </div>
+
+  <label for="recipe">Write your recipe</label>
+  <textarea
+          type="text"
+          class="form-control"
+          name="recipe"
+          id="recipe"
+          placeholder="Enter the recipe"
+  ></textarea>
+  <br />
+
+  <center><button type="submit" class="btn btn-primary">Add</button></center>
+</form>
+
+
+
+
+{% endblock %}
